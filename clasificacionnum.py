@@ -4,7 +4,7 @@ def clasificar_numeros():
     
     while True:
         try:
-            numero = int(input("Ingresa un número (0 para salir): "))
+            numero = int(input("Ingresa un número o ingrese 0 para salir del programa: "))
             if numero == 0:
                 break
             elif numero > 0:
@@ -12,7 +12,7 @@ def clasificar_numeros():
             else:
                 negativos.append(numero)
         except ValueError:
-            print("Por favor, ingresa un número válido.")
+            print("ingresa un número válido.")
     
     resultado = {
         "cantidad_positivos": len(positivos),
